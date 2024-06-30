@@ -1,0 +1,255 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+  animation: fadeInModal 0.5s ease;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container__child.signup__form form {
+  animation: slideInFromLeft 0.5s ease; 
+}
+.modalContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  z-index: 10000; 
+}
+
+.close {
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 34px; 
+  color: #000; 
+}
+
+a,
+[type="submit"] {
+  transition: all .25s ease-in;
+}
+
+.signup__container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateY(-50%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60rem; 
+  height: 45rem; 
+  border-radius: 0.1875rem; 
+  box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25); 
+}
+
+.signup__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/564x/8b/e3/ae/8be3ae1b40253e09e1c15fb6e131c8e5.jpg');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.76); 
+}
+.container__child {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.signup__thumbnail {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(http://ultraimg.com/images/spectre-login.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.thumbnail__logo,
+.thumbnail__content,
+.thumbnail__links {
+  position: relative;
+  z-index: 2;
+  top: -192px;
+}
+
+.thumbnail__logo {
+  align-self: flex-start;
+}
+
+.logo__shape {
+  fill: #fff;
+}
+
+.logo__text {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.thumbnail__content {
+  align-self: center;
+}
+
+.heading--primary {
+  font-size: 1.1rem;
+  color: #5f5f5f;
+  font-family: 'Dancing Script', cursive;
+}
+
+.heading--secondary {
+  font-size: 1.414rem;
+}
+
+.thumbnail__links {
+  align-self: flex-end;
+  width: 100%;
+}
+
+.thumbnail__links a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.thumbnail__links a:focus,
+.thumbnail__links a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.signup__form {
+  margin-top: 40px;
+  padding: 2.5rem;
+  background: #fafafa;
+}
+
+label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #838383;
+  font-family: 'Dancing Script', cursive;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-bottom-color: #4CAF50; 
+}
+
+.form-control:focus {
+  border-color: #111;
+}
+
+[type="text"] {
+  color: #111;
+}
+
+.btn--form {
+  padding: 0.5rem 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #111;
+  border-radius: 2.1875rem; 
+}
+
+.btn--form:focus,
+.btn--form:hover {
+  background: #242424; 
+}
+
+.signup__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #999;
+}
+
+.signup__link:focus,
+.signup__link:hover {
+  color: #7a7a7a; 
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+input[type="text"], input[type="tel"], input[type="number"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+
+.btn--form {
+  padding: 15px 60px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--form:hover {
+  background: #4CAF50; 
+}
+
+
+.m-t-lg {
+  display: flex;
+  justify-content: center;
+}
+
+
+.form-group input[type="date"] {
+  width: 105%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}

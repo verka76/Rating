@@ -1,0 +1,158 @@
+.rating-star {
+    height: 40px;
+    position: relative;
+    width: 40px;
+    float: right;
+    margin: 10px 0 0 10px;
+}
+
+.rating-star .rating-corners-one,
+.rating-star .rating-corners-two {
+    background: #cbc4be;
+    border-radius: 3px;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    top: -50px;
+    left: -14px;
+}
+
+.rating-star .rating-corners-one {
+    transform: rotate(22.5deg);
+}
+
+.rating-star .rating-corners-two {
+    transform: rotate(-22.5deg);
+}
+
+.rating-star .rating {
+    background: #d7cfcc;
+    border-radius: 37px;
+    border: 2px solid #dbdbdd;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    top: -74%;
+    left: 15%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 37px;
+    z-index: 1;
+}
+
+.rating-star .corner {
+    border-radius: 5px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}
+
+.rating-star .corner.one {
+    top: 0;
+    right: 0;
+}
+
+.rating-star .corner.one:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: -70.71px;
+}
+
+.rating-star .corner.two {
+    top: 0;
+    right: 0;
+}
+
+.rating-star .corner.two:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: -70.71px;
+}
+
+.rating-star .corner.three {
+    bottom: 0;
+    right: 0;
+}
+
+.rating-star .corner.three:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: -70.71px;
+    top: 0;
+}
+
+.rating-star .corner.four {
+    bottom: 0;
+    right: 0;
+}
+
+.rating-star .corner.four:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: -70.71px;
+    top: 0;
+}
+
+.rating-star .corner.five {
+    bottom: 0;
+    left: 0;
+}
+
+.rating-star .corner.five:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 70.71px;
+}
+
+.rating-star .corner.six {
+    bottom: 0;
+    left: 0;
+}
+
+.rating-star .corner.six:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 70.71px;
+}
+
+.rating-star .corner.seven {
+    top: 0;
+    left: 0;
+}
+
+.rating-star .corner.seven:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 70.71px;
+    top: 0;
+}
+
+.rating-star .corner.eight {
+    top: 0;
+    left: 0;
+}
+
+.rating-star .corner.eight:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 70.71px;
+    top: 0;
+}
+

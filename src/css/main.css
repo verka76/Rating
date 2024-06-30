@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,700);
+body{
+  padding:0;
+  margin:0;
+  font-size:14px;
+  color: #333;
+  background: #edede9;
+}
+
+.card {
+  background: #fff;
+  position: relative;
+  width: 315px;
+  height: 450px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card-header{
+  position: relative;
+  height: 220px; 
+  background-size: cover;
+  background-position: top;
+}
+.card-header:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #e0e0e0, rgba(181,181,181, 0.1));
+}
+
+.card-header-bar{
+  position: absolute;
+  top:0;
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0,0,0,0);
+  border: none;
+  overflow: hidden;
+}
+
+
+
+svg .polygon{
+  fill: #fff;
+}
+.card-header-slanted-edge{
+  position: absolute;
+  bottom: -54px;
+  z-index: 1;
+  width: 100%;
+  right:0;
+  left:0;
+}
+
+
+
+
+.card-body{
+  text-align:center;
+  padding-left: 10px;
+}
+
+.name{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.bio{
+  font-size: 17.6px;
+  color: #585858;
+  font-weight: 300;
+  margin: 10px auto;
+  line-height: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+.social-accounts a{
+  margin-left: 10px;
+}
+.social-accounts a:first-child{
+  margin-left: 0;
+}
+
+.card-footer{
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  bottom: 20px;
+}
+
+
+.user-info{
+  margin-top: 25px;
+}
+
+.edit-icon {
+  float: right;
+  color: #007bff;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.delete-icon {
+  float: right;
+  color: #dc3545;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
