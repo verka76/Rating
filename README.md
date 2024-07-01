@@ -27,6 +27,12 @@ npm start
 
 ## Примечание
 
+При импорте базы данных, создайте последовательность если она не существует:
+```
+CREATE SEQUENCE IF NOT EXISTS users_user_id_seq;
+
+```
+
 Настройте базу данных PostgreSQL и измените параметры подключения в файле `server/server.js`:
 
 ```javascript
